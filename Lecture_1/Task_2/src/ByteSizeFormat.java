@@ -11,43 +11,49 @@ public class ByteSizeFormat {
 
     public static void main(String[] args) {
 
-        printBytes(0.5);    // b
-        printBytes(23);     // B
-        printBytes(1024);   // KB
+        printBytes(0.5);    // 4 b
+        printBytes(23);     // 23 B
+        printBytes(1024);   // 1 KB
 
-        printBytes(1048576);    // MB
-        printBytes(1073741824); // GB
+        printBytes(1048576);    // 1 MB
+        printBytes(1073741824); // 1 GB
 
-        printBytes(53692044905543.0);   // TB
-        printBytes(1125899906842624.0); // PB
+        printBytes(53692044905543.0);   // 48.8 TB
+        printBytes(1125899906842624.0); // 1 PB
 
-        printBytes(1152921504606846976.0);      // EB
-        printBytes(1180591620717411303424.0);   // ZB
+        printBytes(1152921504606846976.0);      // 1 EB
+        printBytes(1180591620717411303424.0);   // 1 ZB
 
-        printBytes(1208e22);    // YB
+        printBytes(1208e22);    // 10 YB
+
+        printBytes(1208e25);    // More than maximal YB number
     }
 
+
+    static String[] measures = {"b", "B", "KB", "MB", "GB", "TB", "PB", "EB", "ZB", "YB"};
+
+
     static void printBytes(double byteSize) {
+        int i = 0;
+        double size = byteSize;
+
         if (byteSize < 1) {
-            System.out.println("Bit:        " + String.format("%.1f", byteSize * 8) + " b");
+            size = byteSize * 8;
         } else if (byteSize < 1024) {
-            System.out.println("Byte:       " + String.format("%.1f", byteSize) + " B");
-        } else if (byteSize < Math.pow(1024, 2)) {
-            System.out.println("Kilobyte:   " + String.format("%.1f", byteSize / 1024) + " KB");
-        } else if (byteSize < Math.pow(1024, 3)) {
-            System.out.println("Megabyte:   " + String.format("%.1f", byteSize / Math.pow(1024, 2)) + " MB");
-        } else if (byteSize < Math.pow(1024, 4)) {
-            System.out.println("Gigabyte:   " + String.format("%.1f", byteSize / Math.pow(1024, 3)) + " GB");
-        } else if (byteSize < Math.pow(1024, 5)) {
-            System.out.println("Terrabyte:  " + String.format("%.1f", byteSize / Math.pow(1024, 4)) + " TB");
-        } else if (byteSize < Math.pow(1024, 6)) {
-            System.out.println("Petabyte:   " + String.format("%.1f", byteSize / Math.pow(1024, 5)) + " PB");
-        } else if (byteSize < Math.pow(1024, 7)) {
-            System.out.println("Exabyte:    " + String.format("%.1f", byteSize / Math.pow(1024, 6)) + " EB");
-        } else if (byteSize < Math.pow(1024, 8)) {
-            System.out.println("Zettabyte:  " + String.format("%.1f", byteSize / Math.pow(1024, 7)) + " ZB");
-        } else if (byteSize < Math.pow(1024, 9)) {
-            System.out.println("Yottabyte:  " + String.format("%.1f", byteSize / Math.pow(1024, 8)) + " YB");
+            i = 1;
+        } else {
+            i = 1;
+            while (size >= 1024) {
+                size /= 1024;
+                i++;
+            }
+        }
+
+        if (i < measures.length) {
+            System.out.println(byteSize + " bytes = " + String.format("%.1f", size) + " " + measures[i]);
+        }
+        else {
+            System.out.println("Большая разрядность не определена !");
         }
     }
 }

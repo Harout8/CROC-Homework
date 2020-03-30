@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9bda1703-33f3-48f6-ab0d-6a09b7abea97" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Zqc6wLEWchEsiZAbbggL1XbD4Y" />
+  <component name="PropertiesComponent">
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.ZooTest">
+    <configuration name="ZooTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="zoo-2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.croc.java.winter.school.zoo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.croc.java.winter.school.zoo" />
+      <option name="MAIN_CLASS_NAME" value="ru.croc.java.winter.school.zoo.ZooTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZooTest.EmployeeComeAndLeaveRecordTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="zoo-2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.croc.java.winter.school.zoo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.croc.java.winter.school.zoo" />
+      <option name="MAIN_CLASS_NAME" value="ru.croc.java.winter.school.zoo.ZooTest" />
+      <option name="METHOD_NAME" value="EmployeeComeAndLeaveRecordTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZooTest.contactRecordsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="zoo-2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.croc.java.winter.school.zoo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.croc.java.winter.school.zoo" />
+      <option name="MAIN_CLASS_NAME" value="ru.croc.java.winter.school.zoo.ZooTest" />
+      <option name="METHOD_NAME" value="contactRecordsTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZooTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="zoo-2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.croc.java.winter.school.zoo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.croc.java.winter.school.zoo" />
+      <option name="MAIN_CLASS_NAME" value="ru.croc.java.winter.school.zoo.ZooTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZooTest.updateLocationsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="zoo-2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.croc.java.winter.school.zoo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.croc.java.winter.school.zoo" />
+      <option name="MAIN_CLASS_NAME" value="ru.croc.java.winter.school.zoo.ZooTest" />
+      <option name="METHOD_NAME" value="updateLocationsTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ZooTest" />
+        <item itemvalue="JUnit.ZooTest.EmployeeComeAndLeaveRecordTest" />
+        <item itemvalue="JUnit.ZooTest.contactRecordsTest" />
+        <item itemvalue="JUnit.ZooTest.updateLocationsTest" />
+        <item itemvalue="JUnit.ZooTest.test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9bda1703-33f3-48f6-ab0d-6a09b7abea97" name="Default Changelist" comment="" />
+      <created>1585569892440</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585569892440</updated>
+    </task>
+    <servers />
+  </component>
+</project>

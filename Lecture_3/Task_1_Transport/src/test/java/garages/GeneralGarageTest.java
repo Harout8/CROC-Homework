@@ -23,29 +23,134 @@ import static org.junit.jupiter.api.Assertions.*;
 class GeneralGarageTest {
 
     // Создание транспорта
-    final PassengerCar passengerCar_bmw = new PassengerCar(1, LocalDate.of(2020, 1, 1), "BMW", "M3 GTR", 2005, 5, DriveUnit.ICE);
-    final PassengerCar passengerCar_mazda = new PassengerCar(11, LocalDate.of(2020, 1, 1), "Mazda", "RX-8", 2005, 5, DriveUnit.ICE);
+    final PassengerCar passengerCar_bmw = new PassengerCar(1,
+            LocalDate.of(2020, 1, 1),
+            "BMW",
+            "M3 GTR",
+            2005,
+            5, DriveUnit.ICE);
+    final PassengerCar passengerCar_mazda = new PassengerCar(11,
+            LocalDate.of(2020, 1, 1),
+            "Mazda",
+            "RX-8",
+            2005,
+            5,
+            DriveUnit.ICE);
 
-    final Truck truck_1 = new Truck(2, LocalDate.of(2020, 2, 2),"KAMAZ", "Samosval", 1990, 3, 10.0, DriveUnit.ICE);
-    final Truck truck_2 = new Truck(22, LocalDate.of(2020, 2, 2),"PAZ", "123", 1990, 3, 5.0, DriveUnit.ICE);
+    final Truck truck_1 = new Truck(2,
+            LocalDate.of(2020, 2, 2),
+            "KAMAZ",
+            "Samosval",
+            1990,
+            3,
+            10.0,
+            DriveUnit.ICE);
+    final Truck truck_2 = new Truck(22,
+            LocalDate.of(2020, 2, 2),
+            "PAZ",
+            "123",
+            1990,
+            3,
+            5.0,
+            DriveUnit.ICE);
 
-    final Bus bus_1 = new Bus(3, LocalDate.of(2020, 3, 3),"ЛиАЗ", "5292", 2009, 50, 2, DriveUnit.ICE);
-    final Bus bus_2 = new Bus(33, LocalDate.of(2020, 3, 3),"ЛиАЗ", "5272", 2009, 50, 3, DriveUnit.ICE);
+    final Bus bus_1 = new Bus(3,
+            LocalDate.of(2020, 3, 3),
+            "ЛиАЗ",
+            "5292",
+            2009,
+            50,
+            2,
+            DriveUnit.ICE);
+    final Bus bus_2 = new Bus(33,
+            LocalDate.of(2020, 3, 3),
+            "ЛиАЗ",
+            "5272",
+            2009,
+            50,
+            3,
+            DriveUnit.ICE);
 
-    final Trolleybus trolleybus_1 = new Trolleybus(4, LocalDate.of(2020, 4, 4),"Сибэлтранссервис", "СТ-6217М", 2012, 40, 401, DriveUnit.ELECTRIC);
-    final Trolleybus trolleybus_2 = new Trolleybus(44, LocalDate.of(2020, 4, 4),"Сибэлтранссервис", "СТ-6218М", 2012, 40, 402, DriveUnit.ELECTRIC);
+    final Trolleybus trolleybus_1 = new Trolleybus(4,
+            LocalDate.of(2020, 4, 4),
+            "Сибэлтранссервис",
+            "СТ-6217М",
+            2012,
+            40,
+            401,
+            DriveUnit.ELECTRIC);
+    final Trolleybus trolleybus_2 = new Trolleybus(44,
+            LocalDate.of(2020, 4, 4),
+            "Сибэлтранссервис",
+            "СТ-6218М",
+            2012,
+            40,
+            402,
+            DriveUnit.ELECTRIC);
 
-    final Tram tram_1 = new Tram(5, LocalDate.of(2020, 5, 5),"Витязь", "71-931", 2018, 40, 5, DriveUnit.ELECTRIC);
-    final Tram tram_2 = new Tram(55, LocalDate.of(2020, 5, 5),"Витязь", "71-932", 2018, 40, 8, DriveUnit.ELECTRIC);
+    final Tram tram_1 = new Tram(5,
+            LocalDate.of(2020, 5, 5),
+            "Витязь",
+            "71-931",
+            2018,
+            80,
+            5,
+            DriveUnit.ELECTRIC);
+    final Tram tram_2 = new Tram(55,
+            LocalDate.of(2020, 5, 5),
+            "Витязь",
+            "71-932",
+            2018,
+            40,
+            8,
+            DriveUnit.ELECTRIC);
 
-    final Metro metro_1 = new Metro(6, LocalDate.of(2020, 6, 6),"Москва", "767", 2016, 200, 3, DriveUnit.ELECTRIC);
-    final Metro metro_2 = new Metro(66, LocalDate.of(2020, 6, 6),"Москва", "777", 2016, 200, 4, DriveUnit.ELECTRIC);
+    final Metro metro_1 = new Metro(6,
+            LocalDate.of(2020, 6, 6),
+            "Москва",
+            "767",
+            2016,
+            270,
+            3,
+            DriveUnit.ELECTRIC);
+    final Metro metro_2 = new Metro(66,
+            LocalDate.of(2020, 6, 6),
+            "Москва",
+            "777",
+            2016,
+            207,
+            4,
+            DriveUnit.ELECTRIC);
 
-    final Scooter scooter_1 = new Scooter(7, LocalDate.of(2020, 7, 7),"Atemi", "NFS17-1452", 2015, 1, DriveUnit.MUSCULAR);
-    final Scooter scooter_2 = new Scooter(77, LocalDate.of(2020, 7, 7),"Atemi", "NFS17-1453", 2015, 1, DriveUnit.MUSCULAR);
+    final Scooter scooter_1 = new Scooter(7,
+            LocalDate.of(2020, 7, 7),
+            "Atemi",
+            "NFS17-1452",
+            2015,
+            1,
+            DriveUnit.MUSCULAR);
+    final Scooter scooter_2 = new Scooter(77,
+            LocalDate.of(2020, 7, 7),
+            "Atemi",
+            "NFS17-1453",
+            2015,
+            1,
+            DriveUnit.MUSCULAR);
 
-    final Bicycle bicycle_1 = new Bicycle(8, LocalDate.of(2020, 8, 8),"Юпитер", "24", 2003, 2, DriveUnit.MUSCULAR);
-    final Bicycle bicycle_2 = new Bicycle(88, LocalDate.of(2020, 8, 8),"Юпитер", "2424", 2003, 2, DriveUnit.MUSCULAR);
+    final Bicycle bicycle_1 = new Bicycle(8,
+            LocalDate.of(2020, 8, 8),
+            "Юпитер",
+            "24",
+            2003,
+            2,
+            DriveUnit.MUSCULAR);
+    final Bicycle bicycle_2 = new Bicycle(88,
+            LocalDate.of(2020, 8, 8),
+            "Юпитер",
+            "2424",
+            2003,
+            2,
+            DriveUnit.MUSCULAR);
 
 
     // Создание гаража
@@ -258,7 +363,7 @@ class GeneralGarageTest {
     @Test
     void getMaxCapacityTest() {
         //System.out.println(generalGarage.getMaxCapacity());
-        Assertions.assertEquals(generalGarage.getMaxCapacity(), 682);
+        Assertions.assertEquals(generalGarage.getMaxCapacity(), 777);
     }
 
 

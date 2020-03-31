@@ -147,14 +147,6 @@ public class GeneralGarage {
     public int getMaxCapacity() {
         int totalCapacity = 0;
 
-        for (PassengerCar passengerCar : carPark.getPassengerCars()) {
-            totalCapacity += passengerCar.getCapacity();
-        }
-
-        for (Truck truck : carPark.getTrucks()) {
-            totalCapacity += truck.getCapacity();
-        }
-
         for (Bus bus : depot.getBuses()) {
             totalCapacity += bus.getCapacity();
         }
@@ -169,14 +161,6 @@ public class GeneralGarage {
 
         for (Metro metro : depot.getMetros()) {
             totalCapacity += metro.getCapacity();
-        }
-
-        for (Scooter scooter : bicycleGarage.getScooters()) {
-            totalCapacity += scooter.getCapacity();
-        }
-
-        for (Bicycle bicycle : bicycleGarage.getBicycles()) {
-            totalCapacity += bicycle.getCapacity();
         }
 
         return totalCapacity;

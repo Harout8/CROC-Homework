@@ -146,8 +146,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.GeneralGarageTest" />
-        <item itemvalue="JUnit.GeneralGarageTest.getCountOfPassCarsRelYearsAgoTest" />
         <item itemvalue="JUnit.GeneralGarageTest.getMaxCapacityTest" />
+        <item itemvalue="JUnit.GeneralGarageTest.getCountOfPassCarsRelYearsAgoTest" />
         <item itemvalue="JUnit.GeneralGarageTest.getMaxCapacity" />
         <item itemvalue="JUnit.GeneralGarageTest.getInfoAboutTransportOfTypeTest" />
       </list>

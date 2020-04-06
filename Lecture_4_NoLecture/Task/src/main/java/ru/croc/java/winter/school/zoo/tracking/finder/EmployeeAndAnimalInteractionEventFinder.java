@@ -94,8 +94,6 @@ public class EmployeeAndAnimalInteractionEventFinder extends InteractionFinder i
             // и удалим с отслеживания
             final Interaction interaction = getNotCompletedInteractionBetween(trackedA, trackedB);
             interaction.setFinishTime(LocalDateTime.now());
-            interaction.getAPositions().add(trackedA.getCurrentLocation().position);
-            interaction.getBPositions().add(trackedB.getCurrentLocation().position);
             removeInteraction(interaction);
             return null;
         }

@@ -257,7 +257,5 @@ public class TrackingServiceTest {
         trackingService.update(elephant.getId(), 99, 99);
         System.out.println(trackingService.howManyTimesGotAnimalsOutFromZoo(bob));
         Assertions.assertEquals(1, trackingService.howManyTimesGotAnimalsOutFromZoo(bob));
-
-
     }
 }

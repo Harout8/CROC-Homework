@@ -249,13 +249,21 @@ public class TrackingServiceTest {
         // Они вышли из зоопарка
         trackingService.update(bob.getId(), 199, 199);
         trackingService.update(elephant.getId(), 199, 199);
-        System.out.println(trackingService.howManyTimesGotAnimalsOutFromZoo(bob));
         Assertions.assertEquals(1, trackingService.howManyTimesGotAnimalsOutFromZoo(bob));
 
         // Они вернулись в зоопарк
         trackingService.update(bob.getId(), 99, 99);
         trackingService.update(elephant.getId(), 99, 99);
-        System.out.println(trackingService.howManyTimesGotAnimalsOutFromZoo(bob));
         Assertions.assertEquals(1, trackingService.howManyTimesGotAnimalsOutFromZoo(bob));
+
+        // Они снова вышли из зоопарка
+        trackingService.update(bob.getId(), 1999, 1999);
+        trackingService.update(elephant.getId(), 1999, 1999);
+        Assertions.assertEquals(2, trackingService.howManyTimesGotAnimalsOutFromZoo(bob));
+
+        // Они снова вернулись в зоопарк
+        trackingService.update(bob.getId(), 99, 99);
+        trackingService.update(elephant.getId(), 99, 99);
+        Assertions.assertEquals(2, trackingService.howManyTimesGotAnimalsOutFromZoo(bob));
     }
 }

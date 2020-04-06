@@ -28,7 +28,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TrackingServiceTest.testEmployeeGettingAnimalsOutFromTheZoo">
+  <component name="RunManager" selected="JUnit.TrackingServiceTest">
+    <configuration name="TrackingServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="zoo-2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.croc.java.winter.school.zoo.tracking.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.croc.java.winter.school.zoo.tracking" />
+      <option name="MAIN_CLASS_NAME" value="ru.croc.java.winter.school.zoo.tracking.TrackingServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TrackingServiceTest.testEmployeeGettingAnimalsOutFromTheZoo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="zoo-2" />
       <extension name="coverage">
@@ -56,22 +71,6 @@
       <option name="PACKAGE_NAME" value="ru.croc.java.winter.school.zoo.tracking" />
       <option name="MAIN_CLASS_NAME" value="ru.croc.java.winter.school.zoo.tracking.TrackingServiceTest" />
       <option name="METHOD_NAME" value="testEmployeesInteraction" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TrackingServiceTest.testInteractionEmployeeAndAnimal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="zoo-2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.croc.java.winter.school.zoo.tracking.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.croc.java.winter.school.zoo.tracking" />
-      <option name="MAIN_CLASS_NAME" value="ru.croc.java.winter.school.zoo.tracking.TrackingServiceTest" />
-      <option name="METHOD_NAME" value="testInteractionEmployeeAndAnimal" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -111,11 +110,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TrackingServiceTest" />
         <item itemvalue="JUnit.TrackingServiceTest.testEmployeeGettingAnimalsOutFromTheZoo" />
         <item itemvalue="JUnit.TrackingServiceTest.testTimeWithWards" />
         <item itemvalue="JUnit.TrackingServiceTest.testJournalOfAnimalTracking" />
         <item itemvalue="JUnit.TrackingServiceTest.testEmployeesInteraction" />
-        <item itemvalue="JUnit.TrackingServiceTest.testInteractionEmployeeAndAnimal" />
       </list>
     </recent_temporary>
   </component>

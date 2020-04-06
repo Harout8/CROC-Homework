@@ -1,7 +1,11 @@
 package ru.croc.java.winter.school.zoo.tracking.interaction;
 
+
 import java.time.LocalDateTime;
 
+/**
+ * Длительность контакта
+ */
 public class InteractionDuration {
     private int years = 0;
     private int months = 0;
@@ -20,6 +24,9 @@ public class InteractionDuration {
     }
 
 
+    /**
+     * Посчитать длительность контакта
+     */
     public void computeInteractionDuration() {
         years = finishTime.getYear() - startTime.getYear();
         months = finishTime.getMonthValue() - startTime.getMonthValue();

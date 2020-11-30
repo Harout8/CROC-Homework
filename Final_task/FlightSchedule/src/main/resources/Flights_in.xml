@@ -1,0 +1,22 @@
+<flights>
+    <flight>
+        <idNumber>1</idNumber>
+		<inOut>in</inOut>
+        <cityFrom>Yerevan</cityFrom>
+        <cityTo>Krasnodar</cityTo>
+        <departureDate>01.01.2021</departureDate>
+        <arrivalDate>01.01.2021</arrivalDate>
+        <departureTime>11:00</departureTime>
+		<arrivalTime>12:00</arrivalTime>
+    </flight>
+	<flight>
+        <idNumber>2</idNumber>
+		<inOut>in</inOut>
+        <cityFrom>Novosibirsk</cityFrom>
+        <cityTo>Krasnodar</cityTo>
+        <departureDate>02.02.2021</departureDate>
+        <arrivalDate>02.02.2021</arrivalDate>
+        <departureTime>11:00</departureTime>
+		<arrivalTime>18:00</arrivalTime>
+    </flight>
+</flights>

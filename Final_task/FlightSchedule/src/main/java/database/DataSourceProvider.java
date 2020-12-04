@@ -58,8 +58,8 @@ public class DataSourceProvider {
     public EmbeddedDataSource getDataSource() {
         if (dataSource == null) {
             dataSource = new EmbeddedDataSource();
-            dataSource.setUser("");
-            dataSource.setPassword("");
+            dataSource.setUser(properties.get("user"));
+            dataSource.setPassword(properties.get("password"));
             dataSource.setDatabaseName(properties.get("dbname"));
             dataSource.setCreateDatabase("create");
         }

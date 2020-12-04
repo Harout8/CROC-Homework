@@ -1,7 +1,7 @@
 import database.DataSourceProvider;
-import flight.model.Flight;
-import flight.repository.FlightRepository;
-import flight.scheduleservice.FlightSchedule;
+import model.Flight;
+import repository.FlightRepository;
+import scheduleservice.FlightSchedule;
 
 import java.io.IOException;
 
@@ -23,7 +23,7 @@ public class Main {
 
         for (Flight flight : flightRepository.findAll()) {
             flightRepository.delete(flight);
-            System.out.println("Read after delete: " + flightRepository.read(flight)); // проверим, что запись удалена из таблицы
+            System.out.println("Read after delete: " + flightRepository.findById(flight.getIdNumber())); // проверим, что запись удалена из таблицы
         }
 
         flightSchedule.scheduleXmlToDB();
